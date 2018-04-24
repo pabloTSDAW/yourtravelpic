@@ -50,7 +50,7 @@
   //Counter
   $('.counter').counterUp({
     delay: 10,
-    time: 2000
+    time: 2500
   });
 
 })(jQuery); // End of use strict
