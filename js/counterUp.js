@@ -1,5 +1,6 @@
+//FUNCIÓN CON SCROLL
+
 (function(e) {
-    "use strict";
     e.fn.counterUp = function(t) {
         var n = e.extend({
             time: 400,

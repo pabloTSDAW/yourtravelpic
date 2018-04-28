@@ -48,9 +48,10 @@
   })
 
   //Counter
-  $('.counter').counterUp({
-    delay: 10,
-    time: 2500
-  });
+  // $('.counter').counterUp({
+  //   delay: 10,
+  //   time: 2500
+  // });
+
 
 })(jQuery); // End of use strict
