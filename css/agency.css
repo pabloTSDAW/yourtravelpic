@@ -1,16 +1,30 @@
+/* PRIMARY COLOR: #00cccc */
+
+/* SECONDARY COLOR: #006699 */
+
 body {
   overflow-x: hidden;
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-@font-face{
-   font-family:playlist;
-   src: url('../fonts/playlist.otf');
+@font-face {
+  font-family: billabong;
+  src: url('../fonts/billabong.ttf');
 }
 
-@font-face{
-   font-family:allerta;
-   src: url('../fonts/allerta.ttf');
+@font-face {
+  font-family: playlist;
+  src: url('../fonts/playlist.otf');
+}
+
+@font-face {
+  font-family: allerta;
+  src: url('../fonts/allerta.ttf');
+}
+
+@font-face {
+  font-family: leafy;
+  src: url('../fonts/leafy.otf');
 }
 
 p {
@@ -44,11 +58,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 section {
-  padding: 100px 0;
+  padding: 75px 0;
 }
 
 section h2.section-heading {
-  font-size: 40px;
+  font-size: 30px;
   margin-top: 0;
   margin-bottom: 15px;
 }
@@ -57,15 +71,9 @@ section h3.section-subheading {
   font-size: 22px;
   font-weight: 400;
   font-style: italic;
-  margin-bottom: 75px;
+  margin-bottom: 50px;
   text-transform: none;
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-@media (min-width: 768px) {
-  section {
-    padding: 150px 0;
-  }
 }
 
 .btn {
@@ -149,6 +157,66 @@ img::-moz-selection {
   color: #00cccc;
 }
 
+/* --------- CONTACTO ----------- */
+
+section#contact {
+  background-color: #212529;
+  background-image: url("../img/map-image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section#contact .section-heading {
+  color: #fff;
+}
+
+section#contact .form-group {
+  margin-bottom: 25px;
+}
+
+section#contact .form-group input, section#contact .form-group textarea {
+  padding: 20px;
+}
+
+section#contact .form-group input.form-control {
+  height: auto;
+}
+
+section#contact .form-group textarea.form-control {
+  height: 248px;
+}
+
+section#contact .form-control:focus {
+  border-color: #00cccc;
+  box-shadow: none;
+}
+
+section#contact ::-webkit-input-placeholder {
+  font-weight: 700;
+  color: #ced4da;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+section#contact :-moz-placeholder {
+  font-weight: 700;
+  color: #ced4da;
+  /* Firefox 18- */
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+section#contact ::-moz-placeholder {
+  font-weight: 700;
+  color: #ced4da;
+  /* Firefox 19+ */
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+section#contact :-ms-input-placeholder {
+  font-weight: 700;
+  color: #ced4da;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 25px;
@@ -157,7 +225,7 @@ img::-moz-selection {
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    background-color: transparent;
+    background-color: rgba(33, 37, 41, 0.35);
   }
   #mainNav .navbar-brand {
     font-size: 1.75em;
@@ -177,64 +245,66 @@ img::-moz-selection {
     font-size: 1.25em;
     padding: 12px 0;
   }
-}
-
-header.masthead {
-  text-align: center;
-  color: white;
-  background-image: url("../img/bg-main-xs.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-header.masthead .intro-text {
-  padding-top: 150px;
-  padding-bottom: 100px;
-  animation-delay: 1s;
-  animation-duration: 2.5s;
-}
-
-header.masthead .intro-text .intro-lead-in {
-  font-size: 22px;
-  font-style: italic;
-  line-height: 22px;
-  margin-bottom: 25px;
-  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-header.masthead .intro-text .intro-heading {
-  font-size: 50px;
-  font-weight: 700;
-  line-height: 50px;
-  margin-bottom: 25px;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  section h2.section-heading {
+    font-size: 40px;
+  }
+  header.masthead {
+    text-align: center;
+    color: white;
+    background-image: url("../img/bg-main3-xs.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  header.masthead .intro-text {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    animation-delay: 1s;
+    animation-duration: 2.5s;
+  }
+  header.masthead .intro-text .intro-lead-in {
+    font-size: 22px;
+    font-style: italic;
+    line-height: 22px;
+    margin-bottom: 25px;
+    font-family: leafy;
+    text-shadow: 5px 5px 5px black;
+  }
+  header.masthead .intro-text .intro-heading {
+    font-size: 130px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 25px;
+    font-family: leafy;
+    text-shadow: 5px 5px 5px black;
+  }
 }
 
 @media (min-width: 768px) {
   header.masthead {
-    background-image: url("../img/bg-main.jpg");
+    background-image: url("../img/bg-main3.jpg");
   }
   header.masthead .intro-text {
     padding-top: 250px;
     padding-bottom: 200px;
+    text-align: right;
   }
   header.masthead .intro-text .intro-lead-in {
     font-size: 40px;
     font-style: italic;
     line-height: 40px;
     margin-bottom: 25px;
-    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: leafy;
   }
   header.masthead .intro-text .intro-heading {
-    font-size: 75px;
+    font-size: 100px;
     font-weight: 700;
     line-height: 75px;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: leafy;
   }
 }
 
@@ -636,64 +706,6 @@ header.masthead .intro-text .intro-heading {
   margin-top: 0;
 }
 
-section#contact {
-  background-color: #212529;
-  background-image: url("../img/map-image.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-section#contact .section-heading {
-  color: #fff;
-}
-
-section#contact .form-group {
-  margin-bottom: 25px;
-}
-
-section#contact .form-group input, section#contact .form-group textarea {
-  padding: 20px;
-}
-
-section#contact .form-group input.form-control {
-  height: auto;
-}
-
-section#contact .form-group textarea.form-control {
-  height: 248px;
-}
-
-section#contact .form-control:focus {
-  border-color: #00cccc;
-  box-shadow: none;
-}
-
-section#contact ::-webkit-input-placeholder {
-  font-weight: 700;
-  color: #ced4da;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-section#contact :-moz-placeholder {
-  font-weight: 700;
-  color: #ced4da;
-  /* Firefox 18- */
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-section#contact ::-moz-placeholder {
-  font-weight: 700;
-  color: #ced4da;
-  /* Firefox 19+ */
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-section#contact :-ms-input-placeholder {
-  font-weight: 700;
-  color: #ced4da;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
 footer {
   padding: 25px 0;
   text-align: center;
@@ -870,7 +882,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 .header2 h1 {
-  font-family: playlist;
+  font-family: billabong;
   font-size: 60px;
   color: white;
   margin-bottom: 0;
@@ -923,8 +935,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   text-align: center;
 }
 
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category, .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
   padding: 0 15px;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
@@ -954,4 +965,150 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     font-size: 22px;
   }
+}
+
+.googleMap {
+  width: 100%;
+}
+
+.down {
+  position: absolute;
+  top: 550px;
+  right: 50%;
+}
+
+@media (max-width: 1024px) {
+  .down {
+    display: none;
+  }
+  .header2 h1 {
+    font-size: 50px;
+  }
+  header.masthead .intro-text .intro-heading {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  header.masthead {
+    text-align: center;
+    color: white;
+    background-image: url("../img/bg-main3-xs.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  header.masthead .intro-text {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    animation-delay: 1s;
+    animation-duration: 2.5s;
+  }
+  header.masthead .intro-text .intro-lead-in {
+    font-size: 22px;
+    font-style: italic;
+    line-height: 22px;
+    margin-bottom: 25px;
+    font-family: leafy;
+    text-shadow: 5px 5px 5px black;
+  }
+  header.masthead .intro-text .intro-heading {
+    font-size: 130px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 25px;
+    font-family: leafy;
+    text-shadow: 5px 5px 5px black;
+  }
+  section {
+    padding: 20px;
+  }
+  header.masthead {
+    margin-top: 60px;
+  }
+  header.masthead .intro-text .intro-heading {
+    font-size: 60px;
+  }
+  header.masthead .intro-text .intro-lead-in {
+    font-size: 30px;
+  }
+  .header2 h1 {
+    font-size: 20px;
+  }
+  .header2 img {
+    max-width: 150px;
+  }
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 100px 0;
+  }
+}
+
+#carouselExampleControls p {
+  font-size: 30px;
+}
+
+#typed {
+  animation-delay: 3s;
+}
+
+
+/* ======= Testimonials ======= */
+
+.testimonials {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.testimonials .carousel-indicators {
+  bottom: -60px;
+  z-index: auto;
+}
+
+.testimonials .carousel-indicators li {
+  background: #ccc;
+  border: none;
+  margin: 1px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.testimonials .carousel-indicators li.active {
+  background: #00cccc;
+  border: none;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.testimonials .carousel-item blockquote {
+  font-size: 20px;
+  font-weight: 300;
+  border-left: 0;
+  padding: 0;
+  position: relative;
+}
+
+.testimonials .carousel-item blockquote .fa {
+  color: #00cccc;
+  font-size: 22px;
+}
+
+.testimonials .carousel-item .source {
+  color: #00cccc;
+}
+
+.testimonials .carousel-item .source .title {
+  font-size: 16px;
+  color: #666;
 }
