@@ -35,6 +35,7 @@ a {
   color: #00cccc;
 }
 
+
 a:hover {
   color: #006699;
 }
@@ -1041,6 +1042,19 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   }
   .header2 img {
     max-width: 150px;
+  }
+  .hovereffect .overlay {
+    height:60%;
+  }
+  .hovereffect .overlay p {
+    margin: 0;
+  }
+  .hovereffect .overlay .fa {
+    font-size: 2em;
+  }
+  .hovereffect .overlay button {
+    padding: 0.3rem 1rem;
+    font-size: 1rem;
   }
 }
 
