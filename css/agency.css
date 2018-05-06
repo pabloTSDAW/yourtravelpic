@@ -158,6 +158,10 @@ img::-moz-selection {
   color: #00cccc;
 }
 
+#myModal > div {
+  max-width: 60%;
+}
+
 /* --------- CONTACTO ----------- */
 
 section#contact {
@@ -708,11 +712,13 @@ section#contact :-ms-input-placeholder {
 }
 
 footer {
+  background-color: #212529;
   padding: 25px 0;
   text-align: center;
 }
 
 footer span.copyright {
+  color: white;
   font-size: 90%;
   line-height: 40px;
   text-transform: none;
@@ -883,7 +889,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 .header2 h1 {
-  font-family: billabong;
+  font-family: leafy;
   font-size: 60px;
   color: white;
   margin-bottom: 0;
@@ -988,6 +994,9 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   header.masthead .intro-text .intro-heading {
     font-size: 100px;
   }
+  #myModal > div {
+    max-width: 90%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1055,6 +1064,9 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   .hovereffect .overlay button {
     padding: 0.3rem 1rem;
     font-size: 1rem;
+  }
+  #myModal > div {
+    max-width: 100%;
   }
 }
 
@@ -1125,4 +1137,17 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 .testimonials .carousel-item .source .title {
   font-size: 16px;
   color: #666;
+}
+
+.tours {
+  padding: 0;
+  margin-bottom: 50px;
+}
+.tours li {
+  list-style: none;
+  align-items: center;
+}
+
+.tours li:hover a{
+  text-decoration: none;
 }
