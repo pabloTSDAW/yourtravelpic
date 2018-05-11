@@ -175,9 +175,7 @@
           <h2 class="section-heading text-uppercase">GALLERY</h2>
         </div>
       </div>
-      <div class="row">
-        <div class="card-columns cardsGaleria">
-        </div>
+      <div class="row cardsGaleria">
       </div>
   </section>
 
@@ -373,7 +371,7 @@
     }
 
     for (var i = 1; i < 8; i++) {
-      $('.cardsGaleria').append('<div class="card"><a onclick="ampliar(' + i + ')" data-toggle="modal" data-target="#myModal"><img class="card-img-top" src="../img/locations/granada/galeria/granada' + i + '.jpg" alt="Card image cap"></a></div>');
+      $('.cardsGaleria').append('<div class="col-12 col-md-4 col-lg-3 mb-5"><a onclick="ampliar(' + i + ')" data-toggle="modal" data-target="#myModal"><img class="card-img-top" src="../img/locations/granada/galeria/granada' + i + '.jpg" alt="Card image cap"></a></div>');
     }
 
     function ampliar(img) {
