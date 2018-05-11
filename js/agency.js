@@ -28,10 +28,14 @@
 
   // Collapse Navbar
   var navbarCollapse = function() {
-    if ($("#mainNav").offset().top > 100) {
-      $("#mainNav").addClass("navbar-shrink");
-    } else {
-      $("#mainNav").removeClass("navbar-shrink");
+    if (screen.width > 1024) {
+      if ($("#mainNav").offset().top > 100) {
+        $("#mainNav").addClass("navbar-shrink");
+        $("#logo").attr("src",'./img/logos/TravelpicLogoB.png');
+      } else {
+        $("#mainNav").removeClass("navbar-shrink");
+        $("#logo").attr("src",'./img/logos/TravelpicLogoW_S.png');
+      }
     }
   };
   // Collapse now if page is not at top

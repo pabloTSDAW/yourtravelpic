@@ -35,7 +35,6 @@ a {
   color: #00cccc;
 }
 
-
 a:hover {
   color: #006699;
 }
@@ -145,7 +144,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  font-size: 70%;
+  font-size: 80%;
   font-weight: 400;
   padding: 0.75em 0;
   letter-spacing: 1px;
@@ -158,7 +157,7 @@ img::-moz-selection {
   color: #00cccc;
 }
 
-#myModal > div {
+#myModal>div {
   max-width: 60%;
 }
 
@@ -243,7 +242,7 @@ section#contact :-ms-input-placeholder {
     transition: all 0.3s;
   }
   #mainNav .navbar-nav .nav-item .nav-link {
-    padding: 1.1em 1em !important;
+    padding: 1.1em 0.6em !important;
   }
   #mainNav.navbar-shrink {
     padding-top: 0;
@@ -421,6 +420,12 @@ section#contact :-ms-input-placeholder {
 .locations-modal .modal-content {
   padding: 100px 0;
   text-align: center;
+  background-image: url('../img/fondoModal.jpg');
+  background-size: cover;
+}
+
+.locations-modal img {
+  border: 5px solid rgb(0, 0, 0);
 }
 
 @media (min-width: 767px) {
@@ -999,7 +1004,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   header.masthead .intro-text .intro-heading {
     font-size: 100px;
   }
-  #myModal > div {
+  #myModal>div {
     max-width: 90%;
   }
 }
@@ -1058,7 +1063,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
     max-width: 150px;
   }
   .hovereffect .overlay {
-    height:60%;
+    height: 60%;
   }
   .hovereffect .overlay p {
     margin: 0;
@@ -1070,7 +1075,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
     padding: 0.3rem 1rem;
     font-size: 1rem;
   }
-  #myModal > div {
+  #myModal>div {
     max-width: 100%;
   }
 }
@@ -1088,7 +1093,6 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 #typed {
   animation-delay: 3s;
 }
-
 
 /* ======= Testimonials ======= */
 
@@ -1148,29 +1152,29 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   padding: 0;
   margin-bottom: 50px;
 }
+
 .tours li {
   list-style: none;
   align-items: center;
 }
 
-.tours li:hover a{
+.tours li:hover a {
   text-decoration: none;
 }
 
-.scrollup{
-    width:40px;
-    height:40px;
-    opacity:0.5;
-    position:fixed;
-    bottom:50px;
-    right:20px;
-    display:none;
+.scrollup {
+  width: 40px;
+  height: 40px;
+  opacity: 0.5;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  display: none;
 }
 
-.scrollup .fa{
-    color: #00cccc;
+.scrollup .fa {
+  color: #00cccc;
 }
-
 
 /* RECRUITMENT */
 
@@ -1186,6 +1190,48 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   text-decoration: none;
 }
 
-#recruitment a:hover span{
+#recruitment a:hover span {
   color: #003366;
+}
+
+#mailRecruitment {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+  #mailRecruitment {
+    font-size: 1em;
+  }
+}
+
+.spots {
+  background-image: url('../img/fondoModal.jpg');
+  background-size: cover;
+}
+
+.spots img {
+  border: 3px solid #00cccc;
+}
+
+.spots i {
+  color: #00cccc;
+}
+
+.cardsGaleria img {
+  /* box-shadow: 4px 4px 10px black; */
+}
+
+
+
+
+/* EFECTOS WOW */
+#services .paso1 {
+  animation-delay: 1s;
+}
+#services .paso2 {
+  animation-delay: 2.5s;
+}
+#services .paso3 {
+  animation-delay: 4s;
 }
