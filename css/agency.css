@@ -1254,8 +1254,14 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   .vdivide:after{
     display: none;
   }
+  .spots {
+    padding-top: 50px;
+  }
 }
 
+.general_info {
+  padding: 75px 0;
+}
 
 
 /* EFECTOS WOW */
