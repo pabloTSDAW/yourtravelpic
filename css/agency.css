@@ -443,10 +443,6 @@ section#contact :-ms-input-placeholder {
   margin-bottom: 15px;
 }
 
-.locations-modal .modal-content p {
-  margin-bottom: 30px;
-}
-
 .locations-modal .modal-content p.item-intro {
   font-size: 16px;
   font-style: italic;
@@ -828,8 +824,6 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   height: 70%;
   left: 10%;
   top: 10%;
-  /* border-bottom: 1px solid #FFF;
-  border-top: 1px solid #FFF; */
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
   -webkit-transform: scale(0, 1);
@@ -874,7 +868,6 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 .hovereffect a, .hovereffect p {
   color: #FFF;
-  padding: 1em 0;
   opacity: 0;
   filter: alpha(opacity=0);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -903,7 +896,6 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   font-size: 60px;
   color: white;
   margin-bottom: 0;
-  /* text-shadow: 5px 5px 10px black; */
 }
 
 .videoHeader {
@@ -1221,10 +1213,6 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   color: #00cccc;
 }
 
-.cardsGaleria img {
-  /* box-shadow: 4px 4px 10px black; */
-}
-
 .tours {
   justify-content: center;
   align-items: center;
@@ -1265,12 +1253,9 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 
 /* EFECTOS WOW */
-#services .paso1 {
+#services .paso2 {
   animation-delay: 1s;
 }
-#services .paso2 {
-  animation-delay: 2.5s;
-}
 #services .paso3 {
-  animation-delay: 4s;
+  animation-delay: 2s;
 }
