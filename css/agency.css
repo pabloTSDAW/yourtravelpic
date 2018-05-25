@@ -76,6 +76,10 @@ section h3.section-subheading {
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+header.masthead .intro-text .intro-lead-in {
+  color: #00cccc;
+}
+
 .btn {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
@@ -733,10 +737,20 @@ footer span.copyright {
 
 footer ul.quicklinks {
   font-size: 90%;
+  color: white;
   line-height: 40px;
   margin-bottom: 0;
   text-transform: none;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+footer ul.quicklinks a{
+  color: white;
+}
+
+footer ul.quicklinks a:hover{
+  color: #00cccc;
+  text-decoration: none;
 }
 
 ul.social-buttons {
