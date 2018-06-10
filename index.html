@@ -56,10 +56,13 @@
             <a id="servicios" class="nav-link js-scroll-trigger cl-effect-1" href="#services" onclick="resetContador()">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger cl-effect-1" href="#testimonials">Testimonials</a>
+            <a class="nav-link js-scroll-trigger cl-effect-1" href="#locations">Insta Spots</a>
           </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link js-scroll-trigger cl-effect-1" href="#becreative">Be creative</a>
+          </li> -->
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger cl-effect-1" href="#locations">Locations</a>
+            <a class="nav-link js-scroll-trigger cl-effect-1" href="#testimonials">Testimonials</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger cl-effect-1" href="#recruitment">Join us</a>
@@ -76,10 +79,12 @@
   <header class="masthead">
     <div class="container">
       <div class="intro-text animated fadeIn">
-        <div class="intro-heading">Your Travelpic</div>
-        <div class="intro-lead-in">
-          <p>INSTANT <span id="typed"></span></p>
-        </div>
+        <a class="nav-link js-scroll-trigger" href="#services">
+          <div class="intro-heading">Your Travelpic</div>
+          <div class="intro-lead-in">
+            <p>INSTANT <span id="typed"></span></p>
+          </div>
+        </a>
         <!-- <div id="carouselExampleControls" class="carousel carousel-fade" data-ride="carousel" data-interval="1500" style="position: absolute; top: 75%; right: 10%;">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -104,7 +109,7 @@
   </header>
 
   <!-- Services -->
-  <section id="services">
+  <section id="services" class="bg-light">
     <div class="container">
       <div class="row m-3">
         <div class="col-lg-12 text-center">
@@ -124,35 +129,29 @@
         </div>
       </div>
       <div class="row text-center">
-        <div class="col-md-4 wow fadeInUp paso1">
+        <div class="col-md-3 wow fadeInUp paso1">
           <a href="#locations">
-          <span class="fa-stack fa-3x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-camera fa-stack-1x fa-inverse"></i>
-            </span>
+              <img src="img/paso1.jpg" alt="" class="img-fluid">
           </a>
-          <h4 class="service-heading">Digital Picture</h4>
-          <p class="text-muted">Download it from Facebook</p>
+          <h5 class="service-heading color1">1. Smile</h5>
         </div>
-        <div class="col-md-4 wow fadeInUp paso2">
+        <div class="col-md-3 wow fadeInUp paso2">
           <a href="#locations">
-            <span class="fa-stack fa-3x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-images fa-stack-1x fa-inverse"></i>
-            </span>
+              <img src="img/paso2.jpg" alt="" class="img-fluid">
           </a>
-          <h4 class="service-heading">Instant Printed Picture</h4>
-          <p class="text-muted">Get your souvenir in 30 seconds</p>
+          <h5 class="service-heading color1">2. Capture it</h5>
         </div>
-        <div class="col-md-4 wow fadeInUp paso3">
+        <div class="col-md-3 wow fadeInUp paso3">
           <a href="#locations">
-            <span class="fa-stack fa-3x">
-                <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                <i class="fas fa-plane fa-stack-1x fa-inverse"></i>
-            </span>
+            <img src="img/paso3.jpg" alt="" class="img-fluid">
           </a>
-          <h4 class="service-heading">Enjoy your trip</h4>
-          <p class="text-muted">Keep your souvenir with you</p>
+          <h5 class="service-heading color1">3. Wait for it</h5>
+        </div>
+        <div class="col-md-3 wow fadeInUp paso4">
+          <a href="#locations">
+            <img src="img/paso4.jpg" alt="" class="img-fluid">
+          </a>
+          <h5 class="service-heading color1">4. Take your souvenir</h5>
         </div>
       </div>
 
@@ -186,6 +185,157 @@
         </div> -->
     </div>
   </section>
+
+
+  <!-- locations Grid -->
+  <section id="locations">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">WHERE</h2>
+          <h3 class="section-subheading text-muted">Travel and find us!</h3>
+        </div>
+      </div>
+      <h2 class="text-center"><i class="fas fa-map-marker-alt fa-2x" style="color: #00cccc"></i></h2>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 locations-item">
+          <a class="locations-link" data-toggle="modal" href="#locationsModalHungary" onclick="window.location.href='locations/budapest.html'">
+            <img class="img-fluid" src="img/locations/hungaryName2.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6 locations-item">
+          <a class="locations-link" data-toggle="modal" href="#locationsModalSpain">
+            <img class="img-fluid" src="img/locations/spainName2.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6 locations-item">
+          <a class="locations-link" data-toggle="modal" href="#locationsModalUk" onclick="window.location.href='locations/london.html'">
+            <img class="img-fluid" src="img/locations/ukName2.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6 locations-item">
+          <a class="locations-link" data-toggle="modal" href="#locationsModalComingSoon">
+            <img class="img-fluid" src="img/locations/czechName2.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6 locations-item">
+          <a class="locations-link" data-toggle="modal" href="#locationsModalComingSoon">
+            <img class="img-fluid" src="img/locations/germanyName2.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6 locations-item">
+          <a class="locations-link" data-toggle="modal" href="#locationsModalComingSoon">
+            <img class="img-fluid" src="img/locations/franceName2.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6 locations-item">
+          <a class="locations-link" data-toggle="modal" href="#locationsModalComingSoon">
+            <img class="img-fluid" src="img/locations/greeceName2.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6 locations-item">
+          <a class="locations-link" data-toggle="modal" href="#locationsModalComingSoon">
+            <img class="img-fluid" src="img/locations/italyName2.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6 locations-item">
+          <a class="locations-link" data-toggle="modal" href="#locationsModalComingSoon">
+            <img class="img-fluid" src="img/locations/belgiumName2.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6 locations-item">
+          <a class="locations-link" data-toggle="modal" href="#locationsModalComingSoon">
+            <img class="img-fluid" src="img/locations/polandName2.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6 locations-item">
+          <a class="locations-link" data-toggle="modal" href="#locationsModalComingSoon">
+            <img class="img-fluid" src="img/locations/portugalName2.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6 locations-item">
+          <a class="locations-link" data-toggle="modal" href="#locationsModalComingSoon">
+            <img class="img-fluid" src="img/locations/austriaName2.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-12 text-center">
+          <h3 class="section-subheading text-muted">MORE COUNTRIES SOON</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Be creative -->
+  <!-- <section id="becreative" class="testimonials bg-light">
+    <div class="container">
+      <div class="row m-3">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Be creative</h2>
+        </div>
+      </div>
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <blockquote>
+              <i class="fa fa-quote-left"></i>
+              <p>You enjoy the picture with your five senses.</p>
+            </blockquote>
+            <p class="source">Kevin<br /><span class="title">Budapest</span></p>
+          </div>
+          <div class="carousel-item">
+            <blockquote>
+              <i class="fa fa-quote-left"></i>
+              <p>The time waiting while the image starts developing is exciting and wonderful.</p>
+            </blockquote>
+            <p class="source">Sarah<br /><span class="title">Rome</span></p>
+          </div>
+          <div class="carousel-item">
+            <blockquote>
+              <i class="fa fa-quote-left"></i>
+              <p>I had forgotten how beautiful a picture can be.</p>
+            </blockquote>
+            <p class="source">Helen<br /><span class="title">London</span></p>
+          </div>
+          <div class="carousel-item">
+            <blockquote>
+              <i class="fa fa-quote-left"></i>
+              <p>The feeling of having just one shot makes that moment unique.</p>
+            </blockquote>
+            <p class="source">Lorena<br /><span class="title">Granada</span></p>
+          </div>
+          <div class="carousel-item">
+            <blockquote>
+              <i class="fa fa-quote-left"></i>
+              <p>The colours are special, it has its own perspective of the landscape, and the quality is impressive.</p>
+            </blockquote>
+            <p class="source">Emily<br /><span class="title">Paris</span></p>
+          </div>
+          <div class="carousel-item">
+            <blockquote>
+              <i class="fa fa-quote-left"></i>
+              <p>I have always wanted one pic like this for my fridge hahah!.</p>
+            </blockquote>
+            <p class="source">Michael<br /><span class="title">Prague</span></p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!--//container-->
+  <!-- </section> -->
+  <!--//becreative-->
+
 
 
   <!-- Testimonials -->
@@ -257,91 +407,6 @@
   <!--//testimonials-->
 
 
-  <!-- locations Grid -->
-  <section id="locations">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">LOCATIONS</h2>
-          <h3 class="section-subheading text-muted">We are waiting for you!</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-sm-6 locations-item">
-          <a class="locations-link" data-toggle="modal" href="#locationsModalHungary">
-            <!-- <div class="locations-hover">
-              <div class="locations-hover-content">
-                <i class="fa fa-camera fa-3x"></i>
-              </div>
-            </div> -->
-            <img class="img-fluid" src="img/locations/hungaryName.png" alt="" onmouseover="this.src='img/locations/hungaryName2.png'" onmouseout="this.src='img/locations/hungaryName.png'">
-          </a>
-        </div>
-        <div class="col-md-4 col-sm-6 locations-item">
-          <a class="locations-link" data-toggle="modal" href="#locationsModalSpain">
-            <img class="img-fluid" src="img/locations/spainName.png" alt="" onmouseover="this.src='img/locations/spainName2.png'" onmouseout="this.src='img/locations/spainName.png'">
-          </a>
-        </div>
-        <div class="col-md-4 col-sm-6 locations-item">
-          <a class="locations-link" data-toggle="modal" href="#locationsModalUk">
-            <img class="img-fluid" src="img/locations/ukName.png" alt="" onmouseover="this.src='img/locations/ukName2.png'" onmouseout="this.src='img/locations/ukName.png'">
-          </a>
-        </div>
-        <div class="col-md-4 col-sm-6 locations-item">
-          <a class="locations-link" data-toggle="modal" href="#locationsModalComingSoon">
-            <img class="img-fluid" src="img/locations/czechName.png" alt="" onmouseover="this.src='img/locations/czechName2.png'" onmouseout="this.src='img/locations/czechName.png'">
-          </a>
-        </div>
-        <div class="col-md-4 col-sm-6 locations-item">
-          <a class="locations-link" data-toggle="modal" href="#locationsModalComingSoon">
-            <img class="img-fluid" src="img/locations/germanyName.png" alt="" onmouseover="this.src='img/locations/germanyName2.png'" onmouseout="this.src='img/locations/germanyName.png'">
-          </a>
-        </div>
-        <div class="col-md-4 col-sm-6 locations-item">
-          <a class="locations-link" data-toggle="modal" href="#locationsModalComingSoon">
-            <img class="img-fluid" src="img/locations/franceName.png" alt="" onmouseover="this.src='img/locations/franceName2.png'" onmouseout="this.src='img/locations/franceName.png'">
-          </a>
-        </div>
-        <div class="col-md-4 col-sm-6 locations-item">
-          <a class="locations-link" data-toggle="modal" href="#locationsModalComingSoon">
-            <img class="img-fluid" src="img/locations/greeceName.png" alt="" onmouseover="this.src='img/locations/greeceName2.png'" onmouseout="this.src='img/locations/greeceName.png'">
-          </a>
-        </div>
-        <div class="col-md-4 col-sm-6 locations-item">
-          <a class="locations-link" data-toggle="modal" href="#locationsModalComingSoon">
-            <img class="img-fluid" src="img/locations/italyName.png" alt="" onmouseover="this.src='img/locations/italyName2.png'" onmouseout="this.src='img/locations/italyName.png'">
-          </a>
-        </div>
-        <div class="col-md-4 col-sm-6 locations-item">
-          <a class="locations-link" data-toggle="modal" href="#locationsModalComingSoon">
-            <img class="img-fluid" src="img/locations/belgiumName.png" alt="" onmouseover="this.src='img/locations/belgiumName2.png'" onmouseout="this.src='img/locations/belgiumName.png'">
-          </a>
-        </div>
-        <div class="col-md-4 col-sm-6 locations-item">
-          <a class="locations-link" data-toggle="modal" href="#locationsModalComingSoon">
-            <img class="img-fluid" src="img/locations/polandName.png" alt="" onmouseover="this.src='img/locations/polandName2.png'" onmouseout="this.src='img/locations/polandName.png'">
-          </a>
-        </div>
-        <div class="col-md-4 col-sm-6 locations-item">
-          <a class="locations-link" data-toggle="modal" href="#locationsModalComingSoon">
-            <img class="img-fluid" src="img/locations/portugalName.png" alt="" onmouseover="this.src='img/locations/portugalName2.png'" onmouseout="this.src='img/locations/portugalName.png'">
-          </a>
-        </div>
-        <div class="col-md-4 col-sm-6 locations-item">
-          <a class="locations-link" data-toggle="modal" href="#locationsModalComingSoon">
-            <img class="img-fluid" src="img/locations/austriaName.png" alt="" onmouseover="this.src='img/locations/austriaName2.png'" onmouseout="this.src='img/locations/austriaName.png'">
-          </a>
-        </div>
-      </div>
-      <div class="row mt-5">
-        <div class="col-lg-12 text-center">
-          <h3 class="section-subheading text-muted">MORE COUNTRIES SOON</h3>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
   <!-- RECRUITMENT -->
   <section id="recruitment">
     <div class="container">
@@ -361,7 +426,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase mb-5">Contact Us</h2>
+          <h2 class="section-heading text-uppercase mb-5">Contact</h2>
           <h3 class="section-subheading" style="color: rgba(235, 233, 234, 0.82);">info@yourtravelpic.com</h3>
         </div>
       </div>
@@ -454,7 +519,7 @@
   <!-- locations Modals -->
 
   <!-- Modal Hungary -->
-  <div class="locations-modal modal fade" id="locationsModalHungary" tabindex="-1" role="dialog" aria-hidden="true">
+  <!-- <div class="locations-modal modal fade" id="locationsModalHungary" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
@@ -472,13 +537,14 @@
                   <div class="col-12 col-md-6">
                     <div class="hovereffect">
                       <img class="img-fluid" src="img/locations/citysModal/budapest.jpg" alt="" onclick="window.location.href='locations/budapest.html'">
-                      <i class="fa fa-angle-up fa-2x animated bounce infinite"></i>
+
                       <div class="overlay">
                         <p class="mt-3"><i class="fa fa-camera fa-3x"></i></p>
                         <button class="btn btn-primary" onclick="window.location.href='locations/budapest.html'">Smile!</button>
                       </div>
                     </div>
-                    <!-- <h3 class="m-0" onclick="window.location.href='locations/budapest.html'">Budapest</h3> -->
+                    <i class="fa fa-angle-up fa-2x animated bounce infinite"></i>
+                    <p class="animated bounce infinite"><span>Budapest</span></p>
                   </div>
                   <div class="col-md-3 cleafix"></div>
                 </div>
@@ -488,7 +554,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- Modal Spain-->
   <div class="locations-modal modal fade" id="locationsModalSpain" tabindex="-1" role="dialog" aria-hidden="true">
@@ -508,23 +574,25 @@
                   <div class="col-12 col-md-6 mb-5">
                     <div class="hovereffect">
                       <img class="img-fluid" src="img/locations/citysModal/granada.jpg" alt="" onclick="window.location.href='locations/granada.html'">
-                      <i class="fa fa-angle-up fa-2x animated bounce infinite"></i>
                       <div class="overlay">
                         <p class="mt-3"><i class="fa fa-camera fa-3x"></i></p>
                         <button class="btn btn-primary" onclick="window.location.href='locations/granada.html'">Smile!</button>
                       </div>
                     </div>
+                    <i class="fa fa-angle-up fa-2x animated bounce infinite"></i>
+                    <p class="animated bounce infinite"><span>Granada</span></p>
                     <!-- <h3 class="m-0" onclick="window.location.href='locations/granada.html'">Granada</h3> -->
                   </div>
                   <div class="col-12 col-md-6 mb-5">
                     <div class="hovereffect">
                       <img class="img-fluid" src="img/locations/citysModal/barcelona.jpg" alt="" onclick="window.location.href='locations/barcelona.html'">
-                      <i class="fa fa-angle-up fa-2x animated bounce infinite"></i>
                       <div class="overlay">
                         <p class="mt-3"><i class="fa fa-camera fa-3x"></i></p>
                         <button class="btn btn-primary" onclick="window.location.href='locations/barcelona.html'">Smile!</button>
                       </div>
                     </div>
+                    <i class="fa fa-angle-up fa-2x animated bounce infinite"></i>
+                    <p class="animated bounce infinite"><span>Barcelona</span></p>
                     <!-- <h3 class="m-0" onclick="window.location.href='locations/barcelona.html'">Barcelona</h3> -->
                   </div>
                 </div>
@@ -538,7 +606,7 @@
 
 
   <!-- Modal UK -->
-  <div class="locations-modal modal fade" id="locationsModalUk" tabindex="-1" role="dialog" aria-hidden="true">
+  <!-- <div class="locations-modal modal fade" id="locationsModalUk" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
@@ -556,13 +624,13 @@
                   <div class="col-12 col-md-6">
                     <div class="hovereffect">
                       <img class="img-fluid" src="img/locations/citysModal/london.jpg" alt="" onclick="window.location.href='locations/london.html'">
-                      <i class="fa fa-angle-up fa-2x animated bounce infinite"></i>
                       <div class="overlay">
                         <p class="mt-3"><i class="fa fa-camera fa-3x"></i></p>
                         <button class="btn btn-primary" onclick="window.location.href='locations/london.html'">Smile!</button>
                       </div>
                     </div>
-                    <!-- <h3 class="m-0" onclick="window.location.href='locations/london.html'">London</h3> -->
+                    <i class="fa fa-angle-up fa-2x animated bounce infinite"></i>
+                    <p class="animated bounce infinite"><span>London</span></p>
                   </div>
                   <div class="col-md-3 cleafix"></div>
                 </div>
@@ -572,7 +640,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
 
   <!-- Modal 2 -->

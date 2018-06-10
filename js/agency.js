@@ -31,10 +31,10 @@
     if (screen.width > 1024) {
       if ($("#mainNav").offset().top > 100) {
         $("#mainNav").addClass("navbar-shrink");
-        $("#logo").attr("src",'./img/logos/TravelpicLogoB.png');
+        $("#logo").attr("src", './img/logos/TravelpicLogoB.png');
       } else {
         $("#mainNav").removeClass("navbar-shrink");
-        $("#logo").attr("src",'./img/logos/TravelpicLogoW_S.png');
+        $("#logo").attr("src", './img/logos/TravelpicLogoW_S.png');
       }
     }
   };
@@ -51,11 +51,28 @@
     $(".navbar").removeClass("d-none");
   })
 
-  //Counter
-  // $('.counter').counterUp({
-  //   delay: 10,
-  //   time: 2500
-  // });
+  //Carousel Testimonials con swipe
+  $("#testimonials").on("touchstart", function(event) {
+    var xClick = event.originalEvent.touches[0].pageX;
+    $(this).one("touchmove", function(event) {
+      var xMove = event.originalEvent.touches[0].pageX;
+      if (Math.floor(xClick - xMove) > 5) {
+        $(this).carousel('next');
+      } else if (Math.floor(xClick - xMove) < -5) {
+        $(this).carousel('prev');
+      }
+    });
+    $("#testimonials").on("touchend", function() {
+      $(this).off("touchmove");
+    });
+  });
 
 
 })(jQuery); // End of use strict
+
+function bajar(lugar) {
+  $('html,body').animate({
+      scrollTop: $(lugar).offset().top
+    },
+    'slow');
+}

@@ -2,9 +2,20 @@
 
 /* SECONDARY COLOR: #006699 */
 
+
+
 body {
   overflow-x: hidden;
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@font-face {
+  font-family: gothic;
+  src: url('../fonts/gothic.ttf');
+}
+
+* {
+  font-family: gothic;
 }
 
 @font-face {
@@ -31,11 +42,11 @@ p {
   line-height: 1.75;
 }
 
-a {
+a, .color1 {
   color: #00cccc;
 }
 
-a:hover {
+a:hover, .color2 {
   color: #006699;
 }
 
@@ -77,6 +88,10 @@ section h3.section-subheading {
 }
 
 header.masthead .intro-text .intro-lead-in {
+  color: #00cccc;
+}
+
+header.masthead .intro-text:hover .intro-heading {
   color: #00cccc;
 }
 
@@ -333,8 +348,13 @@ section#contact :-ms-input-placeholder {
 #locations .locations-item {
   right: 0;
   margin: 0 0 15px;
+  opacity: 0.5;
 }
 
+#locations .locations-item:hover {
+  opacity: 1;
+}
+/*
 #locations .locations-item .locations-link {
   position: relative;
   display: block;
@@ -406,7 +426,7 @@ section#contact :-ms-input-placeholder {
   font-style: italic;
   margin: 0;
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
+} */
 
 #locations * {
   z-index: 2;
@@ -823,7 +843,6 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 .hovereffect {
   width: 100%;
-  height: 100%;
   float: left;
   overflow: hidden;
   position: relative;
@@ -1015,6 +1034,9 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   }
   #myModal>div {
     max-width: 90%;
+  }
+  #locations .locations-item {
+    opacity: 1;
   }
 }
 
@@ -1265,6 +1287,19 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   padding: 75px 0;
 }
 
+.slide_city {
+  display: flex;
+  justify-content: center;
+}
+
+#carouselCity {
+  width: 100%;
+}
+
+.carouselCity img {
+  width: 100%;
+}
+
 
 /* EFECTOS WOW */
 #services .paso2 {
@@ -1272,4 +1307,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 #services .paso3 {
   animation-delay: 2s;
+}
+#services .paso4 {
+  animation-delay: 3s;
 }
