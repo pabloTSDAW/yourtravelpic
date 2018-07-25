@@ -2,20 +2,18 @@
 
 /* SECONDARY COLOR: #006699 */
 
-
-
 body {
   overflow-x: hidden;
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 @font-face {
-  font-family: gothic;
-  src: url('../fonts/gothic.ttf');
+  font-family: comforta;
+  src: url('../fonts/comfortaa.ttf');
 }
 
 * {
-  font-family: gothic;
+  font-family: comforta;
 }
 
 @font-face {
@@ -252,7 +250,6 @@ section#contact :-ms-input-placeholder {
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    background-color: rgba(33, 37, 41, 0.35);
   }
   #mainNav .navbar-brand {
     font-size: 1.75em;
@@ -276,6 +273,7 @@ section#contact :-ms-input-placeholder {
     font-size: 40px;
   }
   header.masthead {
+    margin-top: 60px;
     text-align: center;
     color: white;
     background-image: url("../img/bg-main3-xs.jpg");
@@ -354,6 +352,7 @@ section#contact :-ms-input-placeholder {
 #locations .locations-item:hover {
   opacity: 1;
 }
+
 /*
 #locations .locations-item .locations-link {
   position: relative;
@@ -764,11 +763,11 @@ footer ul.quicklinks {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-footer ul.quicklinks a{
+footer ul.quicklinks a {
   color: white;
 }
 
-footer ul.quicklinks a:hover{
+footer ul.quicklinks a:hover {
   color: #00cccc;
   text-decoration: none;
 }
@@ -796,11 +795,32 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   background-color: #00cccc;
 }
 
-/* Effect 1: Brackets */
-
-.cl-effect-1 {
-  opacity: 0.8;
+.paso1 img, .paso2 img, .paso3 img, .paso4 img {
+  box-shadow: 5px 5px 20px black;
 }
+
+.paso1 img:hover, .paso2 img:hover, .paso3 img:hover, .paso4 img:hover {
+  transform: scale(1.1);
+}
+
+.socialLinks {
+  display: inline-flex;
+  position: absolute;
+  right: 25px;
+  top: 15px;
+}
+
+@media (max-width: 768px) {
+  .socialLinks {
+    position: inherit;
+    margin-left: 10px;
+  }
+  .socialLinks a i {
+    margin-right: 10px;
+  }
+}
+
+/* Effect 1: Brackets */
 
 .cl-effect-1:hover {
   color: white !important;
@@ -999,9 +1019,10 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 .portfolio-box:focus {
   outline: none;
 }
- .portfolio-box:hover {
-   transform: scale(1.05);
- }
+
+.portfolio-box:hover {
+  transform: scale(1.05);
+}
 
 @media (min-width: 768px) {
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
@@ -1077,9 +1098,6 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   }
   section {
     padding: 20px;
-  }
-  header.masthead {
-    margin-top: 60px;
   }
   header.masthead .intro-text .intro-heading {
     font-size: 60px;
@@ -1207,6 +1225,17 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   color: #00cccc;
 }
 
+
+/* GALERÍA */
+.galeria img {
+  box-shadow: 5px 5px 20px black;
+}
+
+.galeria img:hover {
+  transform: scale(1.1);
+}
+
+
 /* RECRUITMENT */
 
 #recruitment {
@@ -1254,11 +1283,11 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   align-items: center;
 }
 
-.tours div{
+.tours div {
   margin: 0 0 10px 0;
 }
 
-.tours div img:hover{
+.tours div img:hover {
   transform: scale(1.2);
 }
 
@@ -1266,16 +1295,16 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   background: #e0e0e0;
   width: 1px;
   content: "";
-  display:block;
+  display: block;
   position: absolute;
-  top:0;
+  top: 0;
   bottom: 0;
   right: 0;
   min-height: 70px;
 }
 
 @media (max-width: 768px) {
-  .vdivide:after{
+  .vdivide:after {
     display: none;
   }
   .spots {
@@ -1301,13 +1330,38 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 
+/* BE CREATIVE */
+#becreative img {
+  margin-bottom: 20px;
+}
+
+
 /* EFECTOS WOW */
+
 #services .paso2 {
   animation-delay: 1s;
 }
+
 #services .paso3 {
   animation-delay: 2s;
 }
+
 #services .paso4 {
   animation-delay: 3s;
+}
+
+@media (max-width: 768px) {
+  #services .paso1, #services .paso2, #services .paso3, #services .paso4 {
+    animation-delay: 0s;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1025px) {
+  #mainNav {
+    background-color: transparent;
+  }
+  header.masthead {
+    margin-top: 0;
+  }
 }
