@@ -45,18 +45,35 @@
 
 <body>
 
-  <!-- HEADER -->
-  <div class="header2 container-fluid fixed-top">
-    <div class="row">
-      <div class="col-4 text-center">
-        <a href="../index.html"><img src="../img/logos/TravelpicLogoW_S.png" alt=""></a>
-      </div>
-      <div class="col-4"></div>
-      <div class="col-4 text-center">
-        <h1>London</h1>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-xl navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="../index.html"><img id="logo" src="../img/logos/TravelpicLogoW_S.png" alt=""></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase mx-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger cl-effect-1" href="#spots">Insta Spots</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger cl-effect-1" href="#becreative">Our Photographers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger cl-effect-1" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger cl-effect-1" href="#tours">Recommended Tours</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger cl-effect-1" href="#about">About Budapest</a>
+          </li>
+        </ul>
       </div>
     </div>
-  </div>
+  </nav>
 
   <!-- SLIDER -->
   <div class="slide_city">
@@ -79,6 +96,9 @@
           </div>
         </div>
       </div>
+      <div class="carousel-caption">
+        <h1>LONDON</h1>
+      </div>
       <a class="carousel-control-prev" href="#carouselCity" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
@@ -92,7 +112,7 @@
 
 
   <!-- SPOTS -->
-  <section class="spots">
+  <section class="spots" id="spots">
     <div class="container">
       <div class="row mb-5">
         <div class="col-lg-12 text-center">
@@ -219,7 +239,7 @@
 
 
   <!-- GALLERY -->
-  <section class="general_info galeria">
+  <section class="galeria" id="gallery">
     <div class="container">
       <div class="row mb-5">
         <div class="col-lg-12 text-center">
@@ -231,7 +251,7 @@
   </section>
 
   <!-- Free Tours -->
-  <section class="bg-light general_info">
+  <section class="bg-light" id="tours">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -333,7 +353,7 @@
 
 
   <!-- General Info -->
-  <section class="general_info">
+  <section id="about">
     <div class="container">
       <div class="row mb-5">
         <div class="col-lg-12 text-center">
@@ -475,7 +495,7 @@
     });
 
     for (var i = 1; i < 15; i++) {
-      $('.cardsGaleria').append('<div class="col-12 col-md-4 col-lg-3 mb-5"><a onclick="ampliar(' + i + ')" data-toggle="modal" data-target="#myModal"><img class="card-img-top" src="../img/locations/london/galeria/london' + i + '.jpg" alt="Card image cap"></a></div>');
+      $('.cardsGaleria').append('<div class="col-6 col-md-4 col-lg-3 mb-5"><a onclick="ampliar(' + i + ')" data-toggle="modal" data-target="#myModal"><img class="card-img-top" src="../img/locations/london/galeria/london' + i + '.jpg" alt="Card image cap"></a></div>');
     }
 
     function ampliar(img) {

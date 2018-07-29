@@ -43,7 +43,7 @@
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-xl navbar-dark fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top"><img id="logo" src="img/logos/TravelpicLogoW_S.png" alt=""></a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -385,6 +385,40 @@
           <p><a href="mailto:recruitment@yourtravelpic.com?subject=recruitment"><span class="enfasis" id="mailRecruitment">recruitment@yourtravelpic.com</span></a></p>
         </div>
       </div>
+      <div class="row mt-5">
+        <div class="col-md-3 text-center mb-3">
+          <h5>Amsterdam</h5>
+          <p>2 photographers</p>
+        </div>
+        <div class="col-md-3 text-center mb-3">
+          <h5>Brussels</h5>
+          <p>2 photographers</p>
+        </div>
+        <div class="col-md-3 text-center mb-3">
+          <h5>Budapest</h5>
+          <p>1 photographer</p>
+        </div>
+        <div class="col-md-3 text-center mb-3">
+          <h5>Prague</h5>
+          <p>1 photographer</p>
+        </div>
+        <div class="col-md-3 text-center mb-3">
+          <h5>Madrid</h5>
+          <p>2 photographers</p>
+        </div>
+        <div class="col-md-3 text-center mb-3">
+          <h5>Berlin</h5>
+          <p>2 photographers</p>
+        </div>
+        <div class="col-md-3 text-center mb-3">
+          <h5>Paris</h5>
+          <p>3 photographers</p>
+        </div>
+        <div class="col-md-3 text-center mb-3">
+          <h5>London</h5>
+          <p>Team Leader & 2 photographers</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -395,7 +429,7 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase mb-5">Contact</h2>
-          <h3 class="section-subheading" style="color: rgba(235, 233, 234, 0.82);">info@yourtravelpic.com</h3>
+          <h3 class="section-subheading" style="color: rgba(235, 233, 234, 0.82);">Do you want to participate in our pictures contests to win different prizes every month? <br>Or just want to say hi! This is your email address :) <br><br>pictures@yourtravelpic.com</h3>
         </div>
       </div>
       <div class="row">
@@ -704,36 +738,8 @@
     new WOW().init();
 
     $(document).ready(function() {
-      if (screen.width < 1024) $("#logo").attr("src", './img/logos/TravelpicLogoB.png');
-      setTimeout(contadorAutomatico, 8000);
+      if (screen.width < 1200) $("#logo").attr("src", './img/logos/TravelpicLogoB.png');
     })
-
-    function resetContador() {
-      setTimeout(contadorAutomatico, 2000);
-    }
-
-    function contadorAutomatico() {
-      $('.counter').each(function() {
-        var $this = $(this),
-          countTo = $this.attr('data-count');
-
-        $({
-          countNum: 0
-        }).animate({
-          countNum: countTo
-        }, {
-          duration: 3000,
-          easing: 'linear',
-          step: function() {
-            $this.text(Math.floor(this.countNum));
-          },
-          complete: function() {
-            $this.text(this.countNum);
-            //alert('finished');
-          }
-        });
-      });
-    }
 
     setTimeout(function() {
       $("#typed").typed({
@@ -765,7 +771,6 @@
         '</div>'
       );
     }
-
   </script>
 
 </body>

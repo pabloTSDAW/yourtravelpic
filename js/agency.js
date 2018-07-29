@@ -32,9 +32,11 @@
       if ($("#mainNav").offset().top > 100) {
         $("#mainNav").addClass("navbar-shrink");
         $("#logo").attr("src", './img/logos/TravelpicLogoB.png');
+        $("#logo2").attr("src", '../img/logos/TravelpicLogoB.png');
       } else {
         $("#mainNav").removeClass("navbar-shrink");
         $("#logo").attr("src", './img/logos/TravelpicLogoW_S.png');
+        $("#logo2").attr("src", '../img/logos/TravelpicLogoW_S.png');
       }
     }
   };
@@ -76,3 +78,7 @@ function bajar(lugar) {
     },
     'slow');
 }
+
+$(document).ready(function() {
+  if (screen.width < 1200) $("#logo").attr("src", '../img/logos/TravelpicLogoB.png');
+})

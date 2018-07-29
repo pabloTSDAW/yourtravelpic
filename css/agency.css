@@ -66,6 +66,10 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
+.carousel-caption {
+  font-family: comfortaa;
+}
+
 section {
   padding: 75px 0;
 }
@@ -810,7 +814,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   top: 15px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .socialLinks {
     position: inherit;
     margin-left: 10px;
@@ -1097,7 +1101,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
     text-shadow: 5px 5px 5px black;
   }
   section {
-    padding: 20px;
+    padding: 60px 20px;
   }
   header.masthead .intro-text .intro-heading {
     font-size: 60px;
@@ -1146,8 +1150,8 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 /* ======= Testimonials ======= */
 
 .testimonials {
-  padding-top: 60px;
-  padding-bottom: 120px;
+  /* padding-top: 60px; */
+  /* padding-bottom: 120px; */
 }
 
 .testimonials .carousel-indicators {
@@ -1357,11 +1361,17 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
   #mainNav {
     background-color: transparent;
   }
   header.masthead {
     margin-top: 0;
+  }
+}
+
+@media (max-width: 1200px){
+  .slide_city {
+    padding-top: 80px;
   }
 }
