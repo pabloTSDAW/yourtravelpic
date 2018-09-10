@@ -28,16 +28,18 @@
 
   // Collapse Navbar
   var navbarCollapse = function() {
-    if (screen.width > 1024) {
-      if ($("#mainNav").offset().top > 100) {
-        $("#mainNav").addClass("navbar-shrink");
-        $("#logo").attr("src", './img/logos/TravelpicLogoB.png');
-        $("#logo2").attr("src", '../img/logos/TravelpicLogoB.png');
-      } else {
-        $("#mainNav").removeClass("navbar-shrink");
-        $("#logo").attr("src", './img/logos/TravelpicLogoW_S.png');
-        $("#logo2").attr("src", '../img/logos/TravelpicLogoW_S.png');
-      }
+    if (screen.width < 1024) {
+      $("#logo").attr("src", './img/logos/TravelpicLogoB_XS.png');
+    } else {
+      $(document).ready(function() {
+          if ($(this).scrollTop() == 0) {
+            setTimeout(function() {
+              $("html, body").animate({
+                scrollTop: 680
+              }, 600);
+            }, 5000);
+          }
+      });
     }
   };
   // Collapse now if page is not at top
@@ -78,7 +80,3 @@ function bajar(lugar) {
     },
     'slow');
 }
-
-$(document).ready(function() {
-  if (screen.width < 1200) $("#logo").attr("src", '../img/logos/TravelpicLogoB.png');
-})
