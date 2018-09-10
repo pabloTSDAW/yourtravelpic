@@ -676,6 +676,17 @@
       );
     }
 
+    $(document).ready(function() {
+      if (screen.width > 1024) {
+        if ($(this).scrollTop() == 0) {
+          setTimeout(function() {
+            $("html, body").animate({
+              scrollTop: 680
+            }, 600);
+          }, 5000);
+        };
+      }
+    });
   </script>
 
 </body>

@@ -1304,11 +1304,6 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   padding: 75px 0;
 }
 
-.slide_city {
-  display: flex;
-  justify-content: center;
-}
-
 #carouselCity {
   width: 100%;
 }
@@ -1351,6 +1346,11 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   }
   header.masthead {
     margin-top: 0;
+  }
+  .slide_city {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
   }
 }
 

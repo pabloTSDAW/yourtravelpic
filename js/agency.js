@@ -30,16 +30,7 @@
   var navbarCollapse = function() {
     if (screen.width < 1024) {
       $("#logo").attr("src", './img/logos/TravelpicLogoB_XS.png');
-    } else {
-      $(document).ready(function() {
-          if ($(this).scrollTop() == 0) {
-            setTimeout(function() {
-              $("html, body").animate({
-                scrollTop: 680
-              }, 600);
-            }, 5000);
-          }
-      });
+      $("#logo2").attr("src", '../img/logos/TravelpicLogoB_XS.png');
     }
   };
   // Collapse now if page is not at top
