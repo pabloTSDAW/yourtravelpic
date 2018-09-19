@@ -131,7 +131,7 @@ img::-moz-selection {
 }
 
 #mainNav {
-  background-color: #212529;
+  background-color: rgba(33, 37, 41, 0.90);
 }
 
 #mainNav .navbar-toggler {
@@ -257,7 +257,7 @@ section#contact :-ms-input-placeholder {
   #mainNav.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #212529;
+    background-color: rgba(33, 37, 41, 0.90);
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -267,7 +267,6 @@ section#contact :-ms-input-placeholder {
     font-size: 40px;
   }
   header.masthead {
-    margin-top: 60px;
     text-align: center;
     color: white;
     background-image: url("../img/bg-main3-xs.jpg");
@@ -846,7 +845,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   transform: translateX(0px);
 }
 
-/* HOVER EFFECTS - locations */
+/* HOVER EFFECTS - locations Modal*/
 
 .hovereffect {
   width: 100%;
@@ -922,6 +921,52 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
+
+/* HOVER EFFECTS - locations */
+
+.hovereffect2 {
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect2 .overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 70%;
+  left: 10%;
+  top: 10%;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+}
+
+.hovereffect2:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect2 img {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.hovereffect2:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+  opacity: 0;
+}
+
 
 /* -------------------- PÁGINAS INDIVIDUALES -------------------------- */
 
@@ -1050,7 +1095,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 @media (max-width: 767px) {
   header.masthead {
-    margin-top: 70px;
+    margin-top: 100px;
     text-align: center;
     color: white;
     background-image: url("../img/bg-main3-xs.jpg");
@@ -1348,7 +1393,6 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
     margin-top: 0;
   }
   .slide_city {
-    margin-top: 30px;
     display: flex;
     justify-content: center;
   }
@@ -1356,6 +1400,6 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 @media (max-width: 1200px){
   .slide_city {
-    padding-top: 80px;
+    padding-top: 100px;
   }
 }
