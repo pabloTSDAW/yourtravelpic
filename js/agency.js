@@ -28,10 +28,10 @@
 
   // Collapse Navbar
   var navbarCollapse = function() {
-    if (screen.width < 1024) {
-      $("#logo").attr("src", './img/logos/TravelpicLogoB_XS.png');
-      $("#logo2").attr("src", '../img/logos/TravelpicLogoB_XS.png');
-    }
+    // if (screen.width < 1024) {
+    //   $("#logo").attr("src", './img/logos/TravelpicLogoB_XS.png');
+    //   $("#logo2").attr("src", '../img/logos/TravelpicLogoB_XS.png');
+    // }
   };
   // Collapse now if page is not at top
   navbarCollapse();
@@ -60,6 +60,14 @@
     $("#testimonials").on("touchend", function() {
       $(this).off("touchmove");
     });
+  });
+
+  $(window).scroll(function() {
+    if ($("#mainNav2").offset().top > 150) {
+      $("#mainNav2").css('background', 'rgba(33, 37, 41, 0.90)');
+    } else {
+      $("#mainNav2").css('background', 'transparent');
+    }
   });
 
 
