@@ -320,6 +320,7 @@ section#contact :-ms-input-placeholder {
     font-family: arialr;
   }
   header.masthead .intro-text .intro-heading {
+    padding-right: 30px;
     font-size: 60px;
     font-weight: 700;
     line-height: 75px;
@@ -1398,7 +1399,11 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 .ciudades img {
-  max-width: 12%;
+  max-width: 10%;
+}
+
+.ciudades a {
+  cursor: pointer;
 }
 
 @media (max-width: 767px) {
