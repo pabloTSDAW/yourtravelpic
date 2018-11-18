@@ -173,6 +173,10 @@ img::-moz-selection {
   max-width: 60%;
 }
 
+#locationsMobile {
+  display: none;
+}
+
 /* --------- CONTACTO ----------- */
 
 section#contact {
@@ -1479,5 +1483,23 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   }
   .scrollup {
     bottom: 35px;
+  }
+}
+
+
+/*---------------------------- SECOND NAVBAR ----------------------------------*/
+@media (max-width: 1199px) {
+  #locationsMobile {
+    display: block;
+  }
+  #locationsMobile .dropdown-menu {
+    background: inherit;
+    border: none;
+  }
+  #locationsMobile .dropdown-item {
+    color: white;
+    margin: 10px 0;
+    font-family: "Montserrat",'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 80%;
   }
 }
