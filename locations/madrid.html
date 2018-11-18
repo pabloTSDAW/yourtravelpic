@@ -327,8 +327,8 @@
           <h2 class="section-heading text-uppercase">GALLERY</h2>
         </div>
       </div>
-      <!-- <div class="row cardsGaleria">
-      </div> -->
+      <div class="row cardsGaleria">
+      </div>
     </div>
   </section>
 
@@ -579,10 +579,10 @@
   <script src="../js/scrolltotop.js"></script>
 
   <script type="text/javascript">
-    for (var i = 1; i < 5; i++) {
-      $('.cardsGaleria').append('<div class="col-6 col-md-4 col-lg-3 mb-5"><a onclick="ampliar(' + i + ')" data-toggle="modal" data-target="#myModal"><img class="card-img-top" src="../img/locations/barcelona/galeria/barcelona' + i +
-        '.jpg" alt="Card image cap"></a></div>');
-    }
+  for (var i = 1; i < 8; i++) {
+    $('.cardsGaleria').append('<div class="col-6 col-md-4 col-lg-3 mb-5"><a onclick="ampliar(' + i + ')" data-toggle="modal" data-target="#myModal"><img class="card-img-top" src="../img/locations/madrid/galeria/madrid' + i +
+      '.jpg" alt="Card image cap"></a></div>');
+  }
 
     function ampliar(img) {
       $('#myModal').empty();
@@ -590,7 +590,7 @@
         '<div class="modal-dialog">' +
         '<div class="modal-content">' +
         '<button type="button" class="close text-center" data-dismiss="modal">Cerrar</button>' +
-        '<img class="img-fluid" src="../img/locations/barcelona/galeria/barcelona' + img + '.jpg"/>' +
+        '<img class="img-fluid" src="../img/locations/madrid/galeria/madrid' + img + '.jpg"/>' +
         '</div>' +
         '</div>'
       );
