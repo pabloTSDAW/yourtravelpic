@@ -153,7 +153,6 @@ img::-moz-selection {
   color: #006699;
 }
 
-
 #mainNav .navbar-nav .nav-item .nav-link, #mainNav2 .navbar-nav .nav-item .nav-link {
   font-size: 80%;
   font-weight: 400;
@@ -165,7 +164,7 @@ img::-moz-selection {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover,#mainNav2 .navbar-nav .nav-item .nav-link.active, #mainNav2 .navbar-nav .nav-item .nav-link:hover {
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav2 .navbar-nav .nav-item .nav-link.active, #mainNav2 .navbar-nav .nav-item .nav-link:hover {
   color: #00cccc;
 }
 
@@ -787,7 +786,7 @@ ul.social-buttons li a {
   background-color: #212529;
 }
 
-ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
+ul.social-buttons li a:hover {
   background-color: #00cccc;
 }
 
@@ -1138,7 +1137,6 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   section {
     padding: 100px 0;
   }
-
 }
 
 #carouselExampleControls p {
@@ -1434,7 +1432,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   z-index: 1200;
 }
 
-.recommendedTours a{
+.recommendedTours a {
   left: auto;
   top: auto;
 }
@@ -1462,7 +1460,6 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   }
 }
 
-
 /* ------------------------ PHOTOGRAPHERS ---------------------------------- */
 
 #photographers {
@@ -1486,8 +1483,8 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   }
 }
 
-
 /*---------------------------- SECOND NAVBAR ----------------------------------*/
+
 @media (max-width: 1199px) {
   #locationsMobile {
     display: block;
@@ -1499,7 +1496,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   #locationsMobile .dropdown-item {
     color: white;
     margin: 10px 0;
-    font-family: "Montserrat",'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: "Montserrat", 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 80%;
   }
 }
