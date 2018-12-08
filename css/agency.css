@@ -483,7 +483,7 @@ section#contact :-ms-input-placeholder {
 .locations-modal .close-modal {
   position: absolute;
   top: 25px;
-  right: 25px;
+  right: 0;
   width: 75px;
   height: 75px;
   cursor: pointer;
@@ -517,6 +517,16 @@ section#contact :-ms-input-placeholder {
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
   background-color: #212529;
+}
+
+button.close {
+  position: absolute;
+  right: 0;
+  padding: 10px;
+}
+
+button.close:hover {
+  color: red;
 }
 
 .timeline {
