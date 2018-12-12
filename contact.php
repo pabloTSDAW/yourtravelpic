@@ -2,7 +2,7 @@
 if(isset($_POST['email'])) {
 
 // Debes editar las próximas dos líneas de código de acuerdo con tus preferencias
-$email_to = "pablopacastell@gmail.com";
+$email_to = "info@yourtravelpic.com";
 $email_subject = "Contacto desde el sitio web";
 
 $email_message = "Detalles del formulario de contacto:\n\n";
