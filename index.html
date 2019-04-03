@@ -70,6 +70,9 @@
             <a class="nav-link js-scroll-trigger" data-toggle="modal" data-target="#freeToursModal">Recommended Tours</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#voucher">Voucher</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#becreative">Creativeness</a>
           </li>
           <li class="nav-item">
@@ -248,8 +251,22 @@
   </section>
 
 
+  <!-- VOUCHER -->
+  <section id="voucher" class="testimonials bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Voucher</h2>
+          <h3 class="section-subheading" style="color: #6c757d;">Travelling in group? Fill the form and get a voucher for free!</h3>
+          <button id="voucherForm" class="btn btn-primary btn-xl text-uppercase" data-toggle="modal" data-target="#voucherModal">Apply</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <!-- Creativeness -->
-  <section id="becreative" class="testimonials bg-light">
+  <section id="becreative" class="testimonials">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -289,7 +306,7 @@
 
 
   <!-- Testimonials -->
-  <section id="testimonials" class="testimonials">
+  <section id="testimonials" class="testimonials bg-light">
     <div class="container">
       <div class="row m-3">
         <div class="col-lg-12 text-center">
@@ -573,6 +590,7 @@
               <div class="modal-body">
                 <!-- Project Details Go Here -->
                 <h3 class="text-uppercase mb-5">Application Form</h3>
+                <p class="text-center">Please, download our <a href="/docs/job_offer_your_travelpic.pdf">job offer for photographers</a>.</p>
                 <form id="recruitmentForm" name="sendRecruitment" novalidate>
                   <div class="row">
                     <div class="col-md-6">
@@ -645,6 +663,122 @@
                       <div class="form-group">
                         <label for="curriculum" class="btn btn-secondary btn-xs">Select File</label><span id="curriculumValue"> Please, upload your resume</span>
                         <input type="file" id="curriculum" style="display: none;" name="curriculum" accept="application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" required data-validation-required-message="Please upload your resume.">
+                        <p class="help-block text-danger"></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="clearfix"></div>
+                    <div class="col-lg-12 text-center">
+                      <div id="success2" style="z-index: 9999;"></div>
+                      <button id="sendRecruitment" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Apply</button>
+                    </div>
+                  </div>
+              </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- Modal Voucher -->
+  <div class="locations-modal modal fade" id="voucherModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h3 class="text-uppercase mb-5">Get a voucher for free!</h3>
+                <form id="voucherForm" name="sendRecruitment" novalidate>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input class="form-control" id="groupName" type="text" placeholder="Group Name *" required data-validation-required-message="Please enter your group name.">
+                        <p class="help-block text-danger"></p>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input class="form-control" id="fullName" type="email" placeholder="Contact Full Name *" required data-validation-required-message="Please enter your name.">
+                        <p class="help-block text-danger"></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input class="form-control" id="phone3" type="text" placeholder="Your Phone *" required data-validation-required-message="Please enter your phone.">
+                        <p class="help-block text-danger"></p>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input class="form-control" id="email3" type="tel" placeholder="Your Email *" required data-validation-required-message="Please enter your email address.">
+                        <p class="help-block text-danger"></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <select class="form-control" id="city" required data-validation-required-message="Please select your workplace.">
+                          <option value="" disabled selected hidden>Who are you?</option>
+                          <option value="travelAgency">Travel agency</option>
+                          <option value="friends">Just friends</option>
+                          <option value="academic">Academic trip</option>
+                          <option value="guided">Guided Tour</option>
+                          <option value="freewalkingtour">Free Walking Tour</option>
+                          <option value="bustour">Bus Tour</option>
+                          <option value="other">Other</option>
+                        </select>
+                        <p class="help-block text-danger"></p>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <select class="form-control" id="destination" required data-validation-required-message="Please select your workplace.">
+                          <option value="" disabled selected hidden>Workplace</option>
+                          <option value="amsterdam">Amsterdam</option>
+                          <option value="barcelona">Barcelona</option>
+                          <option value="berlin">Berlin</option>
+                          <option value="budapest">Budapest</option>
+                          <option value="cambridge">Cambridge</option>
+                          <option value="granada">Granada</option>
+                          <option value="lima">Lima</option>
+                          <option value="london">London</option>
+                          <option value="madrid">Madrid</option>
+                        </select>
+                        <p class="help-block text-danger"></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="tripDateFrom" style="padding: 5%;">Trip Dates: *</label>
+                        <p class="help-block text-danger"></p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <input class="form-control" id="tripDateFrom" type="date" placeholder="Your Email *" required data-validation-required-message="Please enter start date.">
+                        <p class="help-block text-danger"></p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <input class="form-control" id="tripDateTo" type="date" placeholder="Your Email *" required data-validation-required-message="Please enter end date.">
                         <p class="help-block text-danger"></p>
                       </div>
                     </div>

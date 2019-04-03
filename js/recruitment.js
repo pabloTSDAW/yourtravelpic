@@ -42,7 +42,7 @@ $(function() {
           $('#success2').html("<div class='alert alert-success'>");
           $('#success2 > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
             .append("</button>");
-          $('#success2 > .alert-success').text("Your apply has been sent."));
+          $('#success2 > .alert-success').text("Your apply has been sent.");
           $('#success2 > .alert-success').append('</div>');
           //clear all fields
           $('#recruitmentForm').trigger("reset");
