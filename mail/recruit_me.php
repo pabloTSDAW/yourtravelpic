@@ -44,7 +44,7 @@ $job = strip_tags(htmlspecialchars($_POST['job']));
 $city = strip_tags(htmlspecialchars($_POST['city']));
 
 // Create the email and send the message
-$to = 'pablopacastell@gmail.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
+$to = 'info@yourtravelpic.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
 $email_subject = "Website Recruitment Form:  $name";
 $email_body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nPhone: $phone\n\nJob: $job\n\nCity: $city\n\nCountry: $country\n\nMessage:\n$message";
 

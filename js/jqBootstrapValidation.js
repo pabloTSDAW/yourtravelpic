@@ -482,7 +482,7 @@
                     (settings.options.prependExistingHelpBlock ? $helpBlock.data("original-contents") : ""));
                 } else {
                   // Multiple? Being sloppy? Glue them together into an UL.
-                  $helpBlock.html("<ul role=\"alert\"><li>" + errorsFound.join("</li><li>") + "</li></ul>" +
+                  $helpBlock.html("<span role=\"alert\"><span>" + errorsFound.join("</span><span>") + "</span></span>" +
                     (settings.options.prependExistingHelpBlock ? $helpBlock.data("original-contents") : ""));
                 }
               } else {

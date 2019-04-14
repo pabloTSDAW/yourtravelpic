@@ -85,7 +85,7 @@
             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
           </li>
           <li class="nav-item socialLinks">
-            <a class="nav-link js-scroll-trigger mr-1" href="https://twitter.com/Your_Travelpic">
+            <a class="nav-link js-scroll-trigger mr-1" href="https://twitter.com/Your_Travelpic"  target="_blank">
                   <i class="fab fa-twitter"></i>
                 </a>
             <a class="nav-link js-scroll-trigger mr-1" href="https://www.facebook.com/YourTravelpic/" target="_blank">
@@ -252,21 +252,21 @@
 
 
   <!-- VOUCHER -->
-  <!-- <section id="voucher" class="testimonials bg-light">
+  <section id="voucher" class="testimonials bg-light">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Voucher</h2>
           <h3 class="section-subheading" style="color: #6c757d;">Travelling in group? Fill the form and get a voucher for free!</h3>
-          <button id="voucherForm" class="btn btn-primary btn-xl text-uppercase" data-toggle="modal" data-target="#voucherModal">Apply</button>
+          <button id="voucherButton" class="btn btn-primary btn-xl text-uppercase" data-toggle="modal" data-target="#voucherModal">Apply</button>
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
 
 
   <!-- Creativeness -->
-  <section id="becreative" class="testimonials bg-light">
+  <section id="becreative" class="testimonials">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -700,7 +700,9 @@
               <div class="modal-body">
                 <!-- Project Details Go Here -->
                 <h3 class="text-uppercase mb-5">Get a voucher for free!</h3>
-                <form id="voucherForm" name="sendRecruitment" novalidate>
+                <p class="text-center">Download your <a href="/docs/Discounts.pdf" target="_blank">voucher <i class="far fa-file-pdf"></i></a> and show it to the photographer in your phone.</p>
+                <!-- It will be valid when you receive the confirmation via email. -->
+                <form id="voucherForm" name="getVoucher" novalidate>
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group">
@@ -718,8 +720,7 @@
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group">
-                        <input class="form-control" id="phone3" type="text" placeholder="Your Phone *" required data-validation-required-message="Please enter your phone.">
-                        <p class="help-block text-danger"></p>
+                        <input class="form-control" id="phone3" type="text" placeholder="Your Phone ">
                       </div>
                     </div>
                     <div class="col-md-6">
@@ -732,7 +733,7 @@
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group">
-                        <select class="form-control" id="city" required data-validation-required-message="Please select your workplace.">
+                        <select class="form-control" id="cityVoucher">
                           <option value="" disabled selected hidden>Who are you?</option>
                           <option value="travelAgency">Travel agency</option>
                           <option value="friends">Just friends</option>
@@ -747,7 +748,7 @@
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
-                        <select class="form-control" id="destination" required data-validation-required-message="Please select your workplace.">
+                        <select class="form-control" id="destination" required data-validation-required-message="Please select your destination.">
                           <option value="" disabled selected hidden>Workplace</option>
                           <option value="amsterdam">Amsterdam</option>
                           <option value="barcelona">Barcelona</option>
@@ -786,8 +787,8 @@
                   <div class="row">
                     <div class="clearfix"></div>
                     <div class="col-lg-12 text-center">
-                      <div id="success2" style="z-index: 9999;"></div>
-                      <button id="sendRecruitment" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Apply</button>
+                      <div id="success3" style="z-index: 9999;"></div>
+                      <button id="getVoucher" class="btn btn-primary btn-xl text-uppercase" type="submit">Get Voucher</button>
                     </div>
                   </div>
               </div>
@@ -829,6 +830,7 @@
   <script src="js/jqBootstrapValidation.js"></script>
   <script src="js/contact_me.js"></script>
   <script src="js/recruitment.js"></script>
+  <script src="js/voucher.js"></script>
 
   <!-- Custom scripts for this template -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>

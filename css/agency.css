@@ -1352,6 +1352,10 @@ ul.social-buttons li a:hover {
   width: 100%;
 }
 
+.help-block {
+  text-align: left;
+}
+
 /* BE CREATIVE */
 
 #becreative img {
