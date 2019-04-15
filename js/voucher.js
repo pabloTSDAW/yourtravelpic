@@ -12,7 +12,8 @@ $(function() {
       var email = $("input#email3").val();
       var phone = $("input#phone3").val();
       var groupName = $("input#groupName").val();
-      var city = $("select#cityVoucher").val();
+      var who = $("select#who").val();
+      var numGroup = $("input#numGroup").val();
       var destination = $("select#destination").val();
       var tripDateFrom = $("input#tripDateFrom").val();
       var tripDateTo = $("input#tripDateTo").val();
@@ -30,7 +31,8 @@ $(function() {
           name: name,
           phone: phone,
           groupName: groupName,
-          city: city,
+          numGroup: numGroup,
+          who: who,
           destination: destination,
           email: email,
           tripDateFrom: tripDateFrom,
@@ -42,7 +44,7 @@ $(function() {
           $('#success3').html("<div class='alert alert-success'>");
           $('#success3 > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
             .append("</button>");
-          $('#success3 > .alert-success').text("It will be valid when you receive the confirmation via email.");
+          $('#success3 > .alert-success').html('<p class="text-center">Download your <a href="/docs/voucher.jpeg" target="_blank">voucher <i class="far fa-file-pdf"></i></a> and show it to the photographer in your phone. It will be valid when you receive the confirmation via email.</p>\n');
           $('#success3 > .alert-success').append('</div>');
           //clear all fields
         },
