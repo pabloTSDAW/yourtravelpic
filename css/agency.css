@@ -1373,7 +1373,19 @@ ul.social-buttons li a:hover {
 
 /* EFECTOS WOW */
 
-#services .arrow1 {
+#services .paso2 {
+  animation-delay: 1s;
+}
+
+#services .paso3 {
+  animation-delay: 2s;
+}
+
+#services .paso4 {
+  animation-delay: 3s;
+}
+
+/* #services .arrow1 {
   animation-delay: 1s;
 }
 
@@ -1395,7 +1407,7 @@ ul.social-buttons li a:hover {
 
 #services .paso4 {
   animation-delay: 3s;
-}
+} */
 
 
 #services .pasoText {
@@ -1414,7 +1426,7 @@ ul.social-buttons li a:hover {
   #services .pasoText {
     display: block;
   }
-  #services .arrow {
+  /* #services .arrow {
     display: none;
   }
   #services .paso2, #services .paso2_2 {
@@ -1422,11 +1434,11 @@ ul.social-buttons li a:hover {
   }
   #services .paso3 {
     animation-delay: 2s;
-  }
+  } */
 
 }
 
-#services .arrow {
+/* #services .arrow {
  position: absolute;
  top: 50%;
  right: 0;
@@ -1436,7 +1448,7 @@ ul.social-buttons li a:hover {
 
 #services .paso1 img, #services .paso2 img, #services .paso3 img {
   padding: 0 1rem;
-}
+} */
 
 @media (min-width: 1200px) {
   #mainNav {
