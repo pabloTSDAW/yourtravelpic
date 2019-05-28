@@ -1373,17 +1373,30 @@ ul.social-buttons li a:hover {
 
 /* EFECTOS WOW */
 
-#services .paso2 {
+#services .arrow1 {
   animation-delay: 1s;
 }
 
-#services .paso3 {
+#services .paso2 {
+  animation-delay: 1.5s;
+}
+
+#services .paso2_2 {
   animation-delay: 2s;
+}
+
+#services .arrow2 {
+  animation-delay: 3s;
+}
+
+#services .paso3 {
+  animation-delay: 4s;
 }
 
 #services .paso4 {
   animation-delay: 3s;
 }
+
 
 #services .pasoText {
   display: none;
@@ -1401,6 +1414,28 @@ ul.social-buttons li a:hover {
   #services .pasoText {
     display: block;
   }
+  #services .arrow {
+    display: none;
+  }
+  #services .paso2, #services .paso2_2 {
+    animation-delay: 1s;
+  }
+  #services .paso3 {
+    animation-delay: 2s;
+  }
+
+}
+
+#services .arrow {
+ position: absolute;
+ top: 50%;
+ right: 0;
+ font-size: 2rem;
+ color: #00cccc;
+}
+
+#services .paso1 img, #services .paso2 img, #services .paso3 img {
+  padding: 0 1rem;
 }
 
 @media (min-width: 1200px) {
