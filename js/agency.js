@@ -70,12 +70,12 @@
     }
   });
 
-  var tours = $('#tours .tourName');
-  tours.find('.tours').hide();
-
-  tours.on("click", function(){
-    $(this).find('.tours').slideToggle('slow');
-  });
+  // var tours = $('#tours .tourName');
+  // tours.find('.tours').hide();
+  //
+  // tours.on("click", function(){
+  //   $(this).find('.tours').slideToggle('slow');
+  // });
 
 
 })(jQuery); // End of use strict

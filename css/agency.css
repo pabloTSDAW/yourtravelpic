@@ -1219,9 +1219,9 @@ ul.social-buttons li a:hover {
   cursor: pointer;
 }
 
-#tours .tourName span:hover {
+/* #tours .tourName span:hover {
   transform: scale(1.1);
-}
+} */
 
 .tours {
   padding: 0;
