@@ -1578,3 +1578,25 @@ ul.social-buttons li a:hover {
     font-size: 80%;
   }
 }
+
+
+/*----------------------- CONTEST ----------------------*/
+
+#contest {
+  background-image: url('../img/contest/bg.png');
+  background-size: cover;
+}
+
+@media (max-width: 1200px) {
+  #contest {
+    background-image: url('../img/contest/bg-movil.png');
+    background-size: cover;
+  }
+}
+
+@media (max-width: 767px) {
+  #contest {
+    background-image: url('../img/contest/bg-movil-2.png');
+    background-size: cover;
+  }
+}
